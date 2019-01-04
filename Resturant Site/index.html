@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+        <title>Main Street Italian</title>
+
+
+        <!------------ Pure CSS------------>        
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+        <!------------ W3.CSS------------>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!------------External CSS------------>
+        <link rel="stylesheet" href="resturant.css">
+
+        <!------------External Fonts------------>
+        <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+
+        <!------------ Nav-Bar------------>
+
+        <div class="header cursive">
+            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <a href="#" class="pure-menu-heading cursive" href="">Main Street Bar and Grill</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li> <!--  class = pure-menu-selected -->
+                    <li class="pure-menu-item"><a href="#menu" class="pure-menu-link">Menu</a></li>
+                    <li class="pure-menu-item"><a href="#aboutUs" class="pure-menu-link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!------------ Top Image/Header ------------>
+
+        <div class="splash-container">
+            <div class="splash">
+                <h1 class="splash-head cursive">Main Street Bar and Grill</h1>
+                <p class="contactInfo">The city's finest and freshest cusine</p>
+            </div>
+        </div>
+
+
+
+        <!------------ Menu ------------>
+
+        <div class="content-wrapper w3-container w3-xxlarge" id="menu" style="padding-top: 50px">
+            <div class="w3-content content blueBg"> 
+
+                <h1 class="w3-center w3-jumbo cursive blueBg" style="margin-bottom:64px">The Menu</h1>
+
+
+                <!------------Handle Switching------------>
+                <div class="w3-row w3-center w3-border w3-border-white">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Starters');" id="myLink">
+                        <div class="w3-col s4 tablink w3-padding-large w3-hover-red cursive">Starters</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');">
+                        <div class="w3-col s4 tablink w3-padding-large w3-hover-red cursive">Pizza</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Entres');">
+                        <div class="w3-col s4 tablink w3-padding-large w3-hover-red cursive">Entres</div>
+                    </a>
+                </div>
+
+                <!------------Menu Section 1------------>
+                <div id="Pizza" class="w3-container menu w3-padding-32 w3-white" style="font-size: 12px">
+
+                    <h1 class="menuItems"><b>Meat Lover's</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+                    <p class="w3-text-grey">Sausage, pepperoni, bacon and ham</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>The 4-Cheese Beast</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                    <p class="w3-text-grey">Mozzarella, parmesan, pecorino, jarlsberg</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Buffalo Chicken</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, signaure buffalo sauce</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+
+
+                <!------------Menu Section 2------------>
+                <div id="Entres" class="w3-container menu w3-padding-32 w3-white" style="font-size: 12px">
+                    <h1 class="menuItems"><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+                    <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+                    <p class="w3-text-grey">Ravioli filled with your choice of beef or chhese</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+                    <p class="w3-text-grey">Fresh tomato sauce, whole noodles</p>
+                    <hr>
+                    
+                    <h1 class="menuItems"><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+                    <p class="w3-text-grey">Salmon, shrimp, lobster</p>
+                </div>
+
+
+                <!------------Menu Section 3------------>
+                <div id="Starters" class="w3-container menu w3-padding-32 w3-white" style="font-size: 12px">
+                    <h1 class="menuItems"><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                    <p class="w3-text-grey">Ask your waiter</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Mozzarella Sticks</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+                    <p class="w3-text-grey">Hand breaded, fresh mozzarella</p>
+                    <hr>
+
+                    <h1 class="menuItems"><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                    <p class="w3-text-grey">Grilled ciabatta, garlic butter</p>
+                  
+
+                    <hr>
+                    <h1 class="menuItems"><b>House Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+                    <p class="w3-text-grey">Local lettuce, hand-tossed with our house dressing</p>
+                </div>
+
+            </div>
+
+            <!------------ End Menu ------------>
+
+
+
+            <div><br></div>
+
+
+
+            <!------------ Contact/Bottom Section ------------>
+
+            <div class="content blueBg" id="aboutUs">
+                <h2 class=" is-center aboutTitle">About Us</h2>
+
+                <div class="pure-g">
+
+                    <!------------Hours------------>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-2-5" style="padding-right: 0px; padding-left: 0px">
+                        <h4 class="contactHeaders">Hours</h4>
+                        <div class="w3-row contactInfo">
+                            <div class="w3-col s6" style="padding-right: 30px">
+                                <p>Monday / 10:00am - 10:00pm</p>
+                                <p>Tuesday / 10:00am - 10:00pm</p>
+                                <p>Wednesday / 10:00am - 10:00pm</p>
+                                <p>Thursday / 10:00am - 10:00pm</p>
+                            </div>
+                            <div class="w3-col s6">
+                                <p>Friday / 10:00am - 12:00am</p>
+                                <p>Saturday / 12:00pm - 12:00am</p>
+                                <p>Sunday / Closed</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!------------Contact Us------------>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                        <h4 class="contactHeaders">Location</h4>
+
+
+                        <div id="map" class="center-div"></div>
+
+
+                        <h4 class="contactHeaders">Address</h4>
+                        <p class="contactInfo">
+                            1000 E Main Street<br>
+                            St. Capital, State 98765
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!------------ Footer ------------>
+            <div class="footer l-box is-center">
+                Main Steet Italian
+            </div>
+        </div>
+
+        <!------------External Script------------>
+        <script src="script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrwCaGLQDFHREnw-t5eVV-KyvW0JcsU7Q&callback=initMap" async defer></script>
+
+
+
+    </body>
+</html>
